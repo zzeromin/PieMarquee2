@@ -6,6 +6,6 @@ Enhanced Marquee plugin for RetroPie
 cd /home/pi
 git clone https://github.com/rinalim/PieMarquee2
 cd PieMarquee2
-sudo chmod 755 ./install.sh
+chmod 755 ./install.sh
 sudo ./install.sh
 ```
