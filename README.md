@@ -2,7 +2,7 @@
 
 
 # PieMarquee2
-Enhanced Marquee plugin for RetroPie
+Enhanced Marquee plugin for RetroPie, Rpi4
 
 original code by RiNa of raspigamer forum (https://cafe.naver.com/raspigamer/)<br/>
 https://github.com/rinalim/PieMarquee2
@@ -25,8 +25,4 @@ sudo ./install.sh
   * Marquee image for each game "gamefilename.png" in "/home/pi/PieMarquee2/marquee/" folder
   * Instruction panel image for each game "gamefilename.png" in "/home/pi/PieMarquee2/marquee/instruction" folder *optional*
   * publisher image for publisher "publisher.png" in "/home/pi/PieMarquee2/marquee/publisher" folder *optional defined in gamelist_short.xml* 
-  
-  
-
-  
   
