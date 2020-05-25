@@ -1,10 +1,12 @@
 # PieMarquee2
 Enhanced Marquee plugin for RetroPie
+original code by RiNa of raspigamer forum (https://cafe.naver.com/raspigamer/)
+https://github.com/rinalim/PieMarquee2
 
 ## Install
 ```
 cd /home/pi
-git clone https://github.com/rinalim/PieMarquee2
+git clone https://github.com/losernator/PieMarquee2.git
 cd PieMarquee2
 chmod 755 ./install.sh
 sudo ./install.sh
