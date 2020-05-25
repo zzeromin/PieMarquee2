@@ -1,7 +1,10 @@
+![marquee example00](piemarquee00.jpg)
+
+
 # PieMarquee2
 Enhanced Marquee plugin for RetroPie
 
-original code by RiNa of raspigamer forum (https://cafe.naver.com/raspigamer/)
+original code by RiNa of raspigamer forum (https://cafe.naver.com/raspigamer/)<br/>
 https://github.com/rinalim/PieMarquee2
 
 ## Install
