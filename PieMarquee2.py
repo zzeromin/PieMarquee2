@@ -5,8 +5,11 @@ from subprocess import *
 from time import *
 import xml.etree.ElementTree as ET
 
+scrnum = "7"
+
 INTRO = "/home/pi/PieMarquee2/intro.mp4"
-VIEWER = "/home/pi/PieMarquee2/omxiv-marquee /tmp/marquee.txt -f -d 7 -t 5 -T blend --duration 900 &"
+VIEWER = "/opt/retropie/configs/all/PieMarquee2/omxiv-marquee /tmp/marquee.txt -f -d " + scrnum + " -t 5 -T blend --duration 900 --orientation 90 &"
+#VIEWER = "/home/pi/PieMarquee2/omxiv-marquee /tmp/marquee.txt -f -d 7 -t 5 -T blend --duration 900 &"
 # VIEWER = "/home/pi/PieMarquee2/omxiv-marquee /tmp/marquee.txt -f -d 7 -t 5 -T blend --duration 900 -o 270 &"
 
 arcade = ['arcade', 'fba', 'mame-advmame', 'mame-libretro', 'mame-mame4all']
@@ -42,7 +45,7 @@ def get_publisher(romname):
     return words[0].lower()
     
 if os.path.isfile(INTRO) == True:
-    run_cmd("omxplayer --display 7 " + INTRO)
+    run_cmd("omxplayer --display " + scrnum + " " + INTRO)
 
 doc = ET.parse("/home/pi/PieMarquee2/gamelist_short.xml")
 root = doc.getroot()
@@ -116,7 +119,7 @@ while True:
     if imgname+ingame != cur_imgname: # change marquee images
         kill_proc("omxplayer.bin")
         if imgname == "maintitle" and os.path.isfile("/home/pi/PieMarquee2/marquee/maintitle.mp4") == True:
-            os.system("omxplayer --loop --no-osd --display 7 /home/pi/PieMarquee2/marquee/maintitle.mp4 &")            
+            os.system("omxplayer --loop --no-osd --display " + scrnum  + " /home/pi/PieMarquee2/marquee/maintitle.mp4 &")
         else:
             '''
             f = open("/tmp/marquee.txt", "w")
